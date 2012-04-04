@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<world>
+   <space>
+    <body name="cylinder">
+                <transform>
+                    <position x="0.1" y="4" z="3" />
+                    
+                </transform>
+                
+                <geom name="cylinderGeom">
+                    <cylinder radius="0.5" length="2" />
+                    <direction value="1"/>
+                    
+                </geom>
+
+                <mass>
+                    <adjust total="5"/>
+                </mass>
+     </body>
+    </space>
+</world>

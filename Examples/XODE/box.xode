@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ 
+<world>
+   <space>
+    <body name="box">
+                <transform>
+                    <position x="0.1" y="4" z="7" />
+                </transform>
+                
+                <geom name="boxGeom">
+                    <box
+                        sizex="2"
+                        sizey="2"
+                        sizez="2"
+                    />
+                
+                </geom>
+
+                <mass>
+                    <adjust total="2" />
+                 </mass>
+     </body>
+    </space>
+</world>
