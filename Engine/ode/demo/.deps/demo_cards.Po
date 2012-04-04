@@ -1,0 +1,269 @@
+demo_cards.o: demo_cards.cpp \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/vector \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_algobase.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/i686-pc-linux-gnu/bits/c++config.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/i686-pc-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/i686-pc-linux-gnu/bits/cpu_defines.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/functexcept.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/exception_defines.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/cpp_type_traits.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/ext/type_traits.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/ext/numeric_traits.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_pair.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/move.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/concept_check.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_iterator_base_types.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_iterator_base_funcs.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_iterator.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/debug/debug.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/allocator.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/i686-pc-linux-gnu/bits/c++allocator.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/ext/new_allocator.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/new \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/exception \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_construct.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_uninitialized.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_vector.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/initializer_list \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_bvector.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/range_access.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/vector.tcc \
+ /home/minroth/Documents/ode-0.11.1/include/ode/ode.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/odeconfig.h \
+ /usr/include/stdio.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/xlocale.h \
+ /usr/include/sys/types.h /usr/include/time.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/math.h /usr/include/bits/huge_val.h \
+ /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+ /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+ /usr/include/bits/mathinline.h /usr/include/string.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/float.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/compatibility.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/common.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/error.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/odeinit.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/contact.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/memory.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/odemath.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/matrix.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/timer.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/rotation.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/mass.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/misc.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/objects.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/odecpp.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/collision_space.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/collision.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/collision_trimesh.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/odecpp_collision.h \
+ /home/minroth/Documents/ode-0.11.1/include/ode/export-dif.h \
+ /home/minroth/Documents/ode-0.11.1/include/drawstuff/drawstuff.h \
+ /home/minroth/Documents/ode-0.11.1/include/drawstuff/version.h \
+ texturepath.h
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/vector:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_algobase.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/i686-pc-linux-gnu/bits/c++config.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/i686-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/i686-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/functexcept.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/exception_defines.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/ext/type_traits.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/ext/numeric_traits.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_pair.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/move.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/concept_check.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_iterator.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/debug/debug.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/allocator.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/i686-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/ext/new_allocator.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/new:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/exception:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_construct.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_uninitialized.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_vector.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/initializer_list:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/stl_bvector.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/range_access.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/../../../../include/c++/4.6.2/bits/vector.tcc:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/ode.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/odeconfig.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/include/string.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/float.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/compatibility.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/common.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/error.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/odeinit.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/contact.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/memory.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/odemath.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/matrix.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/timer.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/rotation.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/mass.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/misc.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/objects.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/odecpp.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/collision_space.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/collision.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/collision_trimesh.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/odecpp_collision.h:
+
+/home/minroth/Documents/ode-0.11.1/include/ode/export-dif.h:
+
+/home/minroth/Documents/ode-0.11.1/include/drawstuff/drawstuff.h:
+
+/home/minroth/Documents/ode-0.11.1/include/drawstuff/version.h:
+
+texturepath.h:

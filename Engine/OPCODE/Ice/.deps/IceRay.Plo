@@ -1,0 +1,233 @@
+IceRay.lo: IceRay.cpp ../../OPCODE/Stdafx.h ../../OPCODE/Opcode.h \
+ ../../OPCODE/OPC_Settings.h ../../OPCODE/OPC_IceHook.h \
+ /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/xlocale.h \
+ /usr/include/sys/types.h /usr/include/time.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/assert.h /usr/include/string.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/float.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ ../../OPCODE/Ice/IcePreprocessor.h ../../OPCODE/Ice/IceTypes.h \
+ ../../OPCODE/Ice/IceFPU.h ../../OPCODE/Ice/IceMemoryMacros.h \
+ ../../OPCODE/Ice/IceUtils.h ../../OPCODE/Ice/IceContainer.h \
+ ../../OPCODE/Ice/IcePairs.h ../../OPCODE/Ice/IceRevisitedRadix.h \
+ ../../OPCODE/Ice/IceRandom.h ../../OPCODE/Ice/IceAxes.h \
+ ../../OPCODE/Ice/IcePoint.h ../../OPCODE/Ice/IceHPoint.h \
+ ../../OPCODE/Ice/IceMatrix3x3.h ../../OPCODE/Ice/IceMatrix4x4.h \
+ ../../OPCODE/Ice/IcePlane.h ../../OPCODE/Ice/IceRay.h \
+ ../../OPCODE/Ice/IceIndexedTriangle.h ../../include/ode/common.h \
+ ../../include/ode/odeconfig.h ../../include/ode/error.h \
+ ../../OPCODE/Ice/IceTriangle.h ../../OPCODE/Ice/IceTriList.h \
+ ../../OPCODE/Ice/IceAABB.h ../../OPCODE/Ice/IceOBB.h \
+ ../../OPCODE/Ice/IceBoundingSphere.h ../../OPCODE/Ice/IceSegment.h \
+ ../../OPCODE/Ice/IceLSS.h ../../OPCODE/OPC_Common.h \
+ ../../OPCODE/OPC_MeshInterface.h ../../OPCODE/OPC_TreeBuilders.h \
+ ../../OPCODE/OPC_AABBTree.h ../../OPCODE/OPC_OptimizedTree.h \
+ ../../OPCODE/OPC_BaseModel.h ../../OPCODE/OPC_Model.h \
+ ../../OPCODE/OPC_HybridModel.h ../../OPCODE/OPC_Collider.h \
+ ../../OPCODE/OPC_VolumeCollider.h ../../OPCODE/OPC_TreeCollider.h \
+ ../../OPCODE/OPC_RayCollider.h ../../OPCODE/OPC_SphereCollider.h \
+ ../../OPCODE/OPC_OBBCollider.h ../../OPCODE/OPC_AABBCollider.h \
+ ../../OPCODE/OPC_LSSCollider.h ../../OPCODE/OPC_PlanesCollider.h \
+ ../../OPCODE/OPC_Picking.h
+
+../../OPCODE/Stdafx.h:
+
+../../OPCODE/Opcode.h:
+
+../../OPCODE/OPC_Settings.h:
+
+../../OPCODE/OPC_IceHook.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/assert.h:
+
+/usr/include/string.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.6.2/include/float.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+../../OPCODE/Ice/IcePreprocessor.h:
+
+../../OPCODE/Ice/IceTypes.h:
+
+../../OPCODE/Ice/IceFPU.h:
+
+../../OPCODE/Ice/IceMemoryMacros.h:
+
+../../OPCODE/Ice/IceUtils.h:
+
+../../OPCODE/Ice/IceContainer.h:
+
+../../OPCODE/Ice/IcePairs.h:
+
+../../OPCODE/Ice/IceRevisitedRadix.h:
+
+../../OPCODE/Ice/IceRandom.h:
+
+../../OPCODE/Ice/IceAxes.h:
+
+../../OPCODE/Ice/IcePoint.h:
+
+../../OPCODE/Ice/IceHPoint.h:
+
+../../OPCODE/Ice/IceMatrix3x3.h:
+
+../../OPCODE/Ice/IceMatrix4x4.h:
+
+../../OPCODE/Ice/IcePlane.h:
+
+../../OPCODE/Ice/IceRay.h:
+
+../../OPCODE/Ice/IceIndexedTriangle.h:
+
+../../include/ode/common.h:
+
+../../include/ode/odeconfig.h:
+
+../../include/ode/error.h:
+
+../../OPCODE/Ice/IceTriangle.h:
+
+../../OPCODE/Ice/IceTriList.h:
+
+../../OPCODE/Ice/IceAABB.h:
+
+../../OPCODE/Ice/IceOBB.h:
+
+../../OPCODE/Ice/IceBoundingSphere.h:
+
+../../OPCODE/Ice/IceSegment.h:
+
+../../OPCODE/Ice/IceLSS.h:
+
+../../OPCODE/OPC_Common.h:
+
+../../OPCODE/OPC_MeshInterface.h:
+
+../../OPCODE/OPC_TreeBuilders.h:
+
+../../OPCODE/OPC_AABBTree.h:
+
+../../OPCODE/OPC_OptimizedTree.h:
+
+../../OPCODE/OPC_BaseModel.h:
+
+../../OPCODE/OPC_Model.h:
+
+../../OPCODE/OPC_HybridModel.h:
+
+../../OPCODE/OPC_Collider.h:
+
+../../OPCODE/OPC_VolumeCollider.h:
+
+../../OPCODE/OPC_TreeCollider.h:
+
+../../OPCODE/OPC_RayCollider.h:
+
+../../OPCODE/OPC_SphereCollider.h:
+
+../../OPCODE/OPC_OBBCollider.h:
+
+../../OPCODE/OPC_AABBCollider.h:
+
+../../OPCODE/OPC_LSSCollider.h:
+
+../../OPCODE/OPC_PlanesCollider.h:
+
+../../OPCODE/OPC_Picking.h:

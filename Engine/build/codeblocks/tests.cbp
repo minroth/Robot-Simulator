@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="tests" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="DebugSingleDLL">
+				<Option output="../../lib/DebugSingleDLL/tests" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/DebugSingleDLL/tests" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DdSINGLE" />
+					<Add directory="../../include" />
+					<Add directory="../../ode/src" />
+					<Add directory="../../tests/UnitTest++/src" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../lib/DebugSingleDLL" />
+					<Add library="ode_singled" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="../../lib/DebugSingleDLL/tests" />
+				</ExtraCommands>
+			</Target>
+			<Target title="ReleaseSingleDLL">
+				<Option output="../../lib/ReleaseSingleDLL/tests" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/ReleaseSingleDLL/tests" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-DdSINGLE" />
+					<Add directory="../../include" />
+					<Add directory="../../ode/src" />
+					<Add directory="../../tests/UnitTest++/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="../../lib/ReleaseSingleDLL" />
+					<Add library="ode_single" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="../../lib/ReleaseSingleDLL/tests" />
+				</ExtraCommands>
+			</Target>
+			<Target title="DebugSingleLib">
+				<Option output="../../lib/DebugSingleLib/tests" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/DebugSingleLib/tests" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DdSINGLE" />
+					<Add directory="../../include" />
+					<Add directory="../../ode/src" />
+					<Add directory="../../tests/UnitTest++/src" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../lib/DebugSingleLib" />
+					<Add library="ode_singled" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="../../lib/DebugSingleLib/tests" />
+				</ExtraCommands>
+			</Target>
+			<Target title="ReleaseSingleLib">
+				<Option output="../../lib/ReleaseSingleLib/tests" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/ReleaseSingleLib/tests" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-DdSINGLE" />
+					<Add directory="../../include" />
+					<Add directory="../../ode/src" />
+					<Add directory="../../tests/UnitTest++/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="../../lib/ReleaseSingleLib" />
+					<Add library="ode_single" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="../../lib/ReleaseSingleLib/tests" />
+				</ExtraCommands>
+			</Target>
+			<Target title="DebugDoubleDLL">
+				<Option output="../../lib/DebugDoubleDLL/tests" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/DebugDoubleDLL/tests" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DdDOUBLE" />
+					<Add directory="../../include" />
+					<Add directory="../../ode/src" />
+					<Add directory="../../tests/UnitTest++/src" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../lib/DebugDoubleDLL" />
+					<Add library="ode_doubled" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="../../lib/DebugDoubleDLL/tests" />
+				</ExtraCommands>
+			</Target>
+			<Target title="ReleaseDoubleDLL">
+				<Option output="../../lib/ReleaseDoubleDLL/tests" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/ReleaseDoubleDLL/tests" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-DdDOUBLE" />
+					<Add directory="../../include" />
+					<Add directory="../../ode/src" />
+					<Add directory="../../tests/UnitTest++/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="../../lib/ReleaseDoubleDLL" />
+					<Add library="ode_double" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="../../lib/ReleaseDoubleDLL/tests" />
+				</ExtraCommands>
+			</Target>
+			<Target title="DebugDoubleLib">
+				<Option output="../../lib/DebugDoubleLib/tests" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/DebugDoubleLib/tests" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DdDOUBLE" />
+					<Add directory="../../include" />
+					<Add directory="../../ode/src" />
+					<Add directory="../../tests/UnitTest++/src" />
+				</Compiler>
+				<Linker>
+					<Add directory="../../lib/DebugDoubleLib" />
+					<Add library="ode_doubled" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="../../lib/DebugDoubleLib/tests" />
+				</ExtraCommands>
+			</Target>
+			<Target title="ReleaseDoubleLib">
+				<Option output="../../lib/ReleaseDoubleLib/tests" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/ReleaseDoubleLib/tests" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-DdDOUBLE" />
+					<Add directory="../../include" />
+					<Add directory="../../ode/src" />
+					<Add directory="../../tests/UnitTest++/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="../../lib/ReleaseDoubleLib" />
+					<Add library="ode_double" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="../../lib/ReleaseDoubleLib/tests" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Unit filename="../../tests/joint.cpp">
+		</Unit>
+		<Unit filename="../../tests/main.cpp">
+		</Unit>
+		<Unit filename="../../tests/collision.cpp">
+		</Unit>
+		<Unit filename="../../tests/odemath.cpp">
+		</Unit>
+		<Unit filename="../../tests/joints/pr.cpp">
+		</Unit>
+		<Unit filename="../../tests/joints/universal.cpp">
+		</Unit>
+		<Unit filename="../../tests/joints/slider.cpp">
+		</Unit>
+		<Unit filename="../../tests/joints/ball.cpp">
+		</Unit>
+		<Unit filename="../../tests/joints/piston.cpp">
+		</Unit>
+		<Unit filename="../../tests/joints/pu.cpp">
+		</Unit>
+		<Unit filename="../../tests/joints/hinge.cpp">
+		</Unit>
+		<Unit filename="../../tests/joints/hinge2.cpp">
+		</Unit>
+		<Unit filename="../../tests/joints/fixed.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestRunner.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Checks.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Makefile.in">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestList.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/DeferredTestResult.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestDetails.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestList.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/DeferredTestResult.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/XmlTestReporter.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/CheckMacros.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/XmlTestReporter.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestReporter.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Test.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestMacros.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Config.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestReporterStdout.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Test.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/ReportAssert.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestReporter.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestReporterStdout.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Makefile">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/DeferredTestReporter.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestDetails.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Makefile.am">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestSuite.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestResults.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/UnitTest++.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TimeConstraint.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/ReportAssert.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestResults.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/AssertException.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Checks.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/MemoryOutStream.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/MemoryOutStream.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/DeferredTestReporter.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/AssertException.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TestRunner.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TimeHelpers.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/TimeConstraint.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Posix/Makefile.in">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Posix/SignalTranslator.h">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Posix/Makefile">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Posix/Makefile.am">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Posix/SignalTranslator.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Posix/TimeHelpers.cpp">
+		</Unit>
+		<Unit filename="../../tests/UnitTest++/src/Posix/TimeHelpers.h">
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
+

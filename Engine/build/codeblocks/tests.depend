@@ -1,0 +1,401 @@
+# depslib dependency file v1.0
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/AssertException.cpp
+	"AssertException.h"
+	<cstring>
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/AssertException.h
+	<exception>
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/Checks.cpp
+	"Checks.h"
+	<cstring>
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/Checks.h
+	"Config.h"
+	"TestResults.h"
+	"MemoryOutStream.h"
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/Config.h
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestResults.h
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/MemoryOutStream.h
+	"Config.h"
+	<sstream>
+	<cstddef>
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/DeferredTestReporter.cpp
+	"DeferredTestReporter.h"
+	"TestDetails.h"
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/DeferredTestReporter.h
+	"TestReporter.h"
+	"DeferredTestResult.h"
+	<vector>
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestReporter.h
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/DeferredTestResult.h
+	<string>
+	<vector>
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestDetails.h
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/DeferredTestResult.cpp
+	"DeferredTestResult.h"
+	<cstdlib>
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/MemoryOutStream.cpp
+	"MemoryOutStream.h"
+	<cstring>
+	<cstdio>
+
+1244517990 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/Posix/SignalTranslator.cpp
+	"SignalTranslator.h"
+
+1244517990 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/Posix/SignalTranslator.h
+	<setjmp.h>
+	<signal.h>
+
+1244517990 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/Posix/TimeHelpers.cpp
+	"TimeHelpers.h"
+	<unistd.h>
+
+1244517990 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/Posix/TimeHelpers.h
+	<sys/time.h>
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/ReportAssert.cpp
+	"AssertException.h"
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/Test.cpp
+	"Config.h"
+	"Test.h"
+	"TestList.h"
+	"TestResults.h"
+	"AssertException.h"
+	"MemoryOutStream.h"
+	"Posix/SignalTranslator.h"
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/Test.h
+	"TestDetails.h"
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestList.h
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestDetails.cpp
+	"TestDetails.h"
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestList.cpp
+	"TestList.h"
+	"Test.h"
+	<cassert>
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestReporter.cpp
+	"TestReporter.h"
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestReporterStdout.cpp
+	"TestReporterStdout.h"
+	<cstdio>
+	"TestDetails.h"
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestReporterStdout.h
+	"TestReporter.h"
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestResults.cpp
+	"TestResults.h"
+	"TestReporter.h"
+	"TestDetails.h"
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestRunner.cpp
+	"TestRunner.h"
+	"TestResults.h"
+	"Test.h"
+	"TestList.h"
+	"TestReporter.h"
+	"TestReporterStdout.h"
+	"TimeHelpers.h"
+	"MemoryOutStream.h"
+	<cstring>
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestRunner.h
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TimeHelpers.h
+	"Config.h"
+	"Posix/TimeHelpers.h"
+	"Win32/TimeHelpers.h"
+
+1244517990 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/Win32/TimeHelpers.h
+	"../Config.h"
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TimeConstraint.cpp
+	"TimeConstraint.h"
+	"TestResults.h"
+	"MemoryOutStream.h"
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TimeConstraint.h
+	"TimeHelpers.h"
+
+1244517997 source:/home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/XmlTestReporter.cpp
+	"XmlTestReporter.h"
+	<iostream>
+	<sstream>
+	<string>
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/XmlTestReporter.h
+	"DeferredTestReporter.h"
+	<iosfwd>
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/collision.cpp
+	<UnitTest++.h>
+	<ode/ode.h>
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/UnitTest++.h
+	"Config.h"
+	"Test.h"
+	"TestList.h"
+	"TestSuite.h"
+	"TestResults.h"
+	<new>
+	"TestMacros.h"
+	"CheckMacros.h"
+	"TestRunner.h"
+	"TimeConstraint.h"
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestSuite.h
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/TestMacros.h
+	"Config.h"
+	"Posix/SignalTranslator.h"
+
+1244517997 /home/minroth/Documents/ode-0.11.1/tests/UnitTest++/src/CheckMacros.h
+	"Checks.h"
+	"AssertException.h"
+	"MemoryOutStream.h"
+	"TestDetails.h"
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/ode.h
+	<ode/odeconfig.h>
+	<ode/compatibility.h>
+	<ode/common.h>
+	<ode/odeinit.h>
+	<ode/contact.h>
+	<ode/error.h>
+	<ode/memory.h>
+	<ode/odemath.h>
+	<ode/matrix.h>
+	<ode/timer.h>
+	<ode/rotation.h>
+	<ode/mass.h>
+	<ode/misc.h>
+	<ode/objects.h>
+	<ode/odecpp.h>
+	<ode/collision_space.h>
+	<ode/collision.h>
+	<ode/odecpp_collision.h>
+	<ode/export-dif.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/odeconfig.h
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<math.h>
+	<string.h>
+	<float.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/compatibility.h
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/common.h
+	<ode/odeconfig.h>
+	<ode/error.h>
+	<math.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/error.h
+	<ode/odeconfig.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/odeinit.h
+	<ode/common.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/contact.h
+	<ode/common.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/memory.h
+	<ode/odeconfig.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/odemath.h
+	<ode/common.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/matrix.h
+	<ode/common.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/timer.h
+	<ode/odeconfig.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/rotation.h
+	<ode/common.h>
+	<ode/compatibility.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/mass.h
+	<ode/common.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/misc.h
+	<ode/common.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/objects.h
+	<ode/common.h>
+	<ode/mass.h>
+	<ode/contact.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/odecpp.h
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/collision_space.h
+	<ode/common.h>
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/collision.h
+	<ode/common.h>
+	<ode/collision_space.h>
+	<ode/contact.h>
+	<ode/odeinit.h>
+	"collision_trimesh.h"
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/collision_trimesh.h
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/odecpp_collision.h
+
+1244517923 /home/minroth/Documents/ode-0.11.1/include/ode/export-dif.h
+	<ode/common.h>
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/joint.cpp
+	<UnitTest++.h>
+	<ode/ode.h>
+	"../ode/src/joints/joints.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/joints.h
+	<ode/common.h>
+	"joint.h"
+	"ball.h"
+	"hinge.h"
+	"slider.h"
+	"contact.h"
+	"universal.h"
+	"hinge2.h"
+	"fixed.h"
+	"null.h"
+	"amotor.h"
+	"lmotor.h"
+	"plane2d.h"
+	"pu.h"
+	"pr.h"
+	"piston.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/joint.h
+	"../objects.h"
+	<ode/contact.h>
+	"../obstack.h"
+
+1244518108 /home/minroth/Documents/ode-0.11.1/ode/src/objects.h
+	<ode/common.h>
+	<ode/memory.h>
+	<ode/mass.h>
+	"array.h"
+
+1244518108 /home/minroth/Documents/ode-0.11.1/ode/src/array.h
+	<ode/odeconfig.h>
+	"config.h"
+
+1325124531 /home/minroth/Documents/ode-0.11.1/ode/src/config.h
+	<malloc.h>
+	<alloca.h>
+
+1244518108 /home/minroth/Documents/ode-0.11.1/ode/src/obstack.h
+	"objects.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/ball.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/hinge.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/slider.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/contact.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/universal.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/hinge2.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/fixed.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/null.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/amotor.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/lmotor.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/plane2d.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/pu.h
+	"universal.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/pr.h
+	"joint.h"
+
+1244518079 /home/minroth/Documents/ode-0.11.1/ode/src/joints/piston.h
+	"joint.h"
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/joints/ball.cpp
+	<UnitTest++.h>
+	<ode/ode.h>
+	"../../ode/src/joints/ball.h"
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/joints/fixed.cpp
+	<UnitTest++.h>
+	<ode/ode.h>
+	"../../ode/src/joints/fixed.h"
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/joints/hinge.cpp
+	<UnitTest++.h>
+	<ode/ode.h>
+	"../../ode/src/joints/hinge.h"
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/joints/hinge2.cpp
+	<UnitTest++.h>
+	<ode/ode.h>
+	"../../ode/src/joints/hinge2.h"
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/joints/pr.cpp
+	<UnitTest++.h>
+	<ode/ode.h>
+	"../../ode/src/joints/pr.h"
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/joints/pu.cpp
+	<UnitTest++.h>
+	<ode/ode.h>
+	"../../ode/src/joints/pu.h"
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/joints/slider.cpp
+	<UnitTest++.h>
+	<ode/ode.h>
+	"../../ode/src/joints/slider.h"
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/joints/universal.cpp
+	<iostream>
+	<UnitTest++.h>
+	<ode/ode.h>
+	"../../ode/src/joints/universal.h"
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/main.cpp
+	<UnitTest++.h>
+
+1244518001 source:/home/minroth/Documents/ode-0.11.1/tests/odemath.cpp
+	<UnitTest++.h>
+	<ode/ode.h>
+	"ode/odemath.h"
+
