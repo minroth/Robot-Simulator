@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <world>
+    <ext ename="constant">
+            <gravity value="9.8"/>
+            <CFM value="1e-5"/>
+   </ext> 
    <space>
     <body name="capsule">
                 <transform>

@@ -406,8 +406,67 @@ dReal GetLenghtCapsule(TiXmlElement *body){
   }
 }
 
+
+
 /*********************************************************************************************/
 
+/**
+  @brief Retorna el la constante de aceleracion de gravedad basado en un archico XODE
+
+  Los archivos *.xode son una representacion de un objeto en ODE en formato XML.
+  Esta funcion solo considera un archivos con solamente un objeto.
+  La funcion utiliza la biblioteca TinyXML para manejar el XML.
+
+  @param worldXML El al archivo *.xode donde esta definido el objeto y para este caso 
+        el archivo donde se encuantrasn las constantes de aceleracion de gravedad.
+
+  @returns  retorna la aceleracion de gravedad del mundo.
+
+
+  */
+dReal GetGravity(TiXmlElement *worldXML){
+  TiXmlElement *gravity;          //Elementos Para el manejo de XML
+
+  gravity = worldXML -> FirstChildElement("ext")-> FirstChildElement("gravity");
+  if(gravity)
+  {
+    return atof(gravity->Attribute("value"));
+  }else
+  { 
+    return 0;
+  }
+}
+
+/*********************************************************************************************/
+
+/**
+  @brief Retorna el la constante CFM basado en un archico XODE
+
+  Los archivos *.xode son una representacion de un objeto en ODE en formato XML.
+  Esta funcion solo considera un archivos con solamente un objeto.
+  La funcion utiliza la biblioteca TinyXML para manejar el XML.
+
+  @param worldXML El al archivo *.xode donde esta definido el objeto y para este caso 
+        el archivo donde se encuentran la constante CFM.
+
+  @returns  retorna la constante CFM.
+
+
+  */
+dReal GetCFM(TiXmlElement *worldXML){
+  TiXmlElement *CFM;          //Elementos Para el manejo de XML
+
+  CFM = worldXML -> FirstChildElement("ext")-> FirstChildElement("CFM");
+  if(CFM)
+  {
+    return atof(CFM->Attribute("value"));
+  }else
+  { 
+    return 0;
+  }
+}
+
+/*********************************************************************************************/
 
 
 /*********************************************************************************************/
@@ -685,8 +744,9 @@ int main(int argc, char *argv[]){
     
     
 	//Gravedad y cosas de simulacion
-    dWorldSetGravity(world,0,0,-9.81);
-    dWorldSetCFM (world,1e-5);
+    
+    dWorldSetGravity(world,0,0,-GetGravity(worldXML));
+    dWorldSetCFM (world,GetCFM(worldXML));
     dCreatePlane (space,0,0,1,0);
     contactgroup = dJointGroupCreate (0);
 

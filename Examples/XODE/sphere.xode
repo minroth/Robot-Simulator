@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
  
 <world>
+   <ext ename="constant">
+            <gravity value="9.8"/>
+            <CFM value="1e-5"/>
+   </ext> 
    <space>
-    <body name="sphere">
-        <transform>
-            <position x="0" y="2" z="0.09"/>
-        </transform> 
-        <geom name="sphereGeom">
-                    <sphere
-                        radius="0.1"
-                    />
-                
-                </geom>  
-        <mass>
-            <adjust total="2.3" />
-        </mass>     
-    </body>
-</space>
+        <body name="sphere">
+            <transform>
+                <position x="0" y="2" z="0.09"/>
+            </transform> 
+            <geom name="sphereGeom">
+                        <sphere
+                            radius="0.1"
+                        />
+                    
+                    </geom>  
+            <mass>
+                <adjust total="2.3" />
+            </mass>     
+        </body>
+    </space>
+    
 </world>
