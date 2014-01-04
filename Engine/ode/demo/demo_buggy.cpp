@@ -46,17 +46,6 @@ this also shows you how to use geom groups.
 #endif
 
 
-// some constants
-
-#define LENGTH 0.7	// chassis length
-#define WIDTH 0.5	// chassis width
-#define HEIGHT 0.2	// chassis height
-#define RADIUS 0.18	// wheel radius
-#define STARTZ 0.5	// starting height of chassis
-#define CMASS 1		// chassis mass
-#define WMASS 0.2	// wheel mass
-
-
 // dynamics and collision objects (chassis, 3 wheels, environment)
 
 static dWorldID world;
@@ -190,14 +179,14 @@ static void simLoop (int pause)
 
   dsSetColor (0,1,1);
   dsSetTexture (DS_WOOD);
-  dReal sides[3] = {LENGTH,WIDTH,HEIGHT};
+  dReal sides[3] = {0.7,0.5,0.2};
   dsDrawBox (dBodyGetPosition(body[0]),dBodyGetRotation(body[0]),sides);
   dsSetColor (1,1,1);
   for (i=1; i<=3; i++) dsDrawCylinder (dBodyGetPosition(body[i]),
-				       dBodyGetRotation(body[i]),0.02f,RADIUS);
+				       dBodyGetRotation(body[i]),0.02f,0.18);
 
   dVector3 ss;
-  dGeomBoxGetLengths (ground_box,ss);
+  dGeomBoxGet0.7s (ground_box,ss);
   dsDrawBox (dGeomGetPosition(ground_box),dGeomGetRotation(ground_box),ss);
 
   /*
@@ -234,28 +223,28 @@ int main (int argc, char **argv)
 
   // chassis body
   body[0] = dBodyCreate (world);
-  dBodySetPosition (body[0],0,0,STARTZ);
-  dMassSetBox (&m,1,LENGTH,WIDTH,HEIGHT);
-  dMassAdjust (&m,CMASS);
+  dBodySetPosition (body[0],0,0,0.5);
+  dMassSetBox (&m,1,0.7,0.5,0.2);
+  dMassAdjust (&m,1);
   dBodySetMass (body[0],&m);
-  box[0] = dCreateBox (0,LENGTH,WIDTH,HEIGHT);
+  box[0] = dCreateBox (0,0.7,0.5,0.2);
   dGeomSetBody (box[0],body[0]);
-
+/**********************/
   // wheel bodies
   for (i=1; i<=3; i++) {
     body[i] = dBodyCreate (world);
     dQuaternion q;
     dQFromAxisAndAngle (q,1,0,0,M_PI*0.5);
     dBodySetQuaternion (body[i],q);
-    dMassSetSphere (&m,1,RADIUS);
-    dMassAdjust (&m,WMASS);
+    dMassSetSphere (&m,1,0.18);
+    dMassAdjust (&m,0.2);
     dBodySetMass (body[i],&m);
-    sphere[i-1] = dCreateSphere (0,RADIUS);
+    sphere[i-1] = dCreateSphere (0,0.18);
     dGeomSetBody (sphere[i-1],body[i]);
   }
-  dBodySetPosition (body[1],0.5*LENGTH,0,STARTZ-HEIGHT*0.5);
-  dBodySetPosition (body[2],-0.5*LENGTH, WIDTH*0.5,STARTZ-HEIGHT*0.5);
-  dBodySetPosition (body[3],-0.5*LENGTH,-WIDTH*0.5,STARTZ-HEIGHT*0.5);
+  dBodySetPosition (body[1],0.35,0,0.5-0.2*0.5);
+  dBodySetPosition (body[2],-0.35, 0.5*0.5,0.5-0.2*0.5);
+  dBodySetPosition (body[3],-0.35,-0.5*0.5,0.5-0.2*0.5);
 
   // front wheel hinge
   /*

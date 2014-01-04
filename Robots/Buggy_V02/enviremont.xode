@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xode version="1.0r22" name="enviremont.xode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://tanksoftware.com/xode/1.0r22/xode.xsd"/>
+<world>
+	<space>
+        
+        <body name="ground">
+                <transform>
+                    <position x="2" y="0" z="-0.34" />
+                    <rotation>
+                    	<axisangle x="0" y="1" z="0" angle="-0.15" aformat="radians"/>
+                	</rotation>  
+                </transform>
+                
+                <geom name="groundGeom">
+                    <box
+                        sizex="1.5"
+                        sizey="2.5"
+                        sizez="1"
+                    />
+                </geom>
+        </body>
+
+    </space>
+</world>

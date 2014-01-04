@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xode version="1.0r22" name="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://tanksoftware.com/xode/1.0r22/xode.xsd"/>
+    <world>
+        <transform>
+        </transform>
+        <space>
+            <body name="frontWheel">
+                <transform>
+                    <position x="0.85" y="0" z="0.4"/>
+                </transform>
+            </body>
+        </space>
+    </world> 
+</xode>

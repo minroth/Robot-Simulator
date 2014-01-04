@@ -1,0 +1,3 @@
+gcc -c XODEParser.cpp -o XODEParser.o
+ar  rcs libXODEParser.a   XODEParser.o
+cp libXODEParser.a ../../Robots/Buggy/
